@@ -17,6 +17,7 @@ public class Bootstrap {
         SwingUtilities.invokeAndWait(new Runnable() {
             @Override
             public void run() {
+                System.out.println("起飞！");
                 MainFrame.getInstance().setVisible(true);
                 MainPanel.getInstance().workingPanel.show(CategoryPanel.getInstance());
             }
